@@ -51,6 +51,10 @@ app.post('/products/total-value', (req, res) => {
   res.json({ totalValue });
 });
 
+app.get('/', (req, res) => {
+    res.send('Server is up and running!');
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
